@@ -52,23 +52,28 @@ function hideAddressBar()
 window.addEventListener("load", hideAddressBar);
 window.addEventListener("orientationchange", hideAddressBar);
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+let tile = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 	maxZoom: 18,
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 	id: 'mapbox.streets'
-}).addTo(ll_map);
+})
+tile.addTo(ll_map);
 
-let quests = [];
 function refreshQuests()
 {
 	let bbox = ll_map.getBounds();
 	bbox = `${bbox.getSouth()},${bbox.getWest()},${bbox.getNorth()},${bbox.getEast()}`;
-	findQuests(bbox).then(function(_quests)
+	findQuests(bbox).then(function(quests)
 	{
-		quests = _quests;
-		quests.map((q) => q.render(ll_map));
+		ll_map.eachLayer(function(l)
+		{
+			if(l != tile)
+				ll_map.removeLayer(l);
+		});
+
+		quests.map((q) => L.marker(q.render(ll_map), {icon: q.icon}).addTo(ll_map));
 	});
 }
 ll_map.on("moveend", refreshQuests);

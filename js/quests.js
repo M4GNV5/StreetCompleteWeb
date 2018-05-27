@@ -111,7 +111,7 @@ class HouseNumberQuest extends Quest
 
 	get icon()
 	{
-		return "housenumber.svg";
+		return HouseNumberQuest.icon;
 	}
 
 	render(map)
@@ -127,4 +127,8 @@ class HouseNumberQuest extends Quest
 		//TODO...
 	}
 }
+HouseNumberQuest.icon = L.icon({
+	iconUrl: 'res/quest_icons/housenumber.svg',
+	iconSize: [20, 20]
+});
 questTypes.push(HouseNumberQuest);
