@@ -97,3 +97,36 @@ function refreshQuests()
 }
 ll_map.on("moveend", refreshQuests);
 refreshQuests();
+
+var pos_marker;
+var pos_radius;
+function update_location(position)
+{
+    if(pos_marker){
+        pos_marker.remove();
+        pos_radius.remove();
+    }
+   // var radius = pos.accuracy / 2;
+   var latlng = [position.coords.latitude,  position.coords.longitude];
+   pos_marker = L.marker(latlng).addTo(ll_map);
+    pos_radius = L.circle(latlng, {
+        color: 'blue',
+        fillColor: '#4c70ff',
+        fillOpacity: 0.5,
+        radius: position.coords.accuracy
+    }).addTo(ll_map);
+    ll_map.setView(latlng, ll_map.getZoom());   
+}
+watchId = navigator.geolocation.watchPosition(
+     update_location,
+     // Optional settings below
+     function()
+     {
+        alert("Failed to aquire location. Enable GPS or try a different browser");
+     },
+     {
+         timeout: 0,
+         enableHighAccuracy: true,
+         maximumAge: Infinity
+     }
+);
