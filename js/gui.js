@@ -1,4 +1,4 @@
-var ll_map = L.map('div_map').setView([51.505, -0.09], 13);
+var ll_map = L.map('div_map').setView([48.51, 11.48], 13);
 var div_map = document.getElementById('div_map');
 var questWindowShown = false;
 
@@ -54,19 +54,3 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 	id: 'mapbox.streets'
 }).addTo(ll_map);
-
-L.marker([51.5, -0.09]).addTo(ll_map);
-
-L.circle([51.508, -0.11], {
-	color: 'red',
-	fillColor: '#f03',
-	fillOpacity: 0.5,
-	radius: 500
-}).addTo(ll_map);
-
-L.polygon([
-	[51.509, -0.08],
-	[51.503, -0.06],
-	[51.51, -0.047]
-]).addTo(ll_map);
-
