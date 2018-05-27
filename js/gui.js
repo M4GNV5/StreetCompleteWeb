@@ -59,3 +59,17 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=p
 		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
 	id: 'mapbox.streets'
 }).addTo(ll_map);
+
+let quests = [];
+function refreshQuests()
+{
+	let bbox = ll_map.getBounds();
+	bbox = `${bbox.getSouth()},${bbox.getWest()},${bbox.getNorth()},${bbox.getEast()}`;
+	findQuests(bbox).then(function(_quests)
+	{
+		quests = _quests;
+		quests.map((q) => q.render(ll_map));
+	});
+}
+ll_map.on("moveend", refreshQuests);
+refreshQuests();

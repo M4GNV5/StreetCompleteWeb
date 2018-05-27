@@ -57,6 +57,7 @@ class Quest
 
 	//render the quest to the map
 	//	`map` is the leaflet map object
+	//	returns the place where the marker for the quest should be (usually the center)
 	render(map)
 	{
 		throw new Error("Not implemented");
@@ -82,7 +83,6 @@ class HouseNumberQuest extends Quest
 
 	static getOverpassQuery(bbox)
 	{
-		bbox = `${bbox.lat}, ${bbox.lon}, ${bbox.lat + bbox.width}, ${bbox.lon + bbox.height}`;
 		return `[out:json][timeout:25];
 				(
 					way["building"~"house|residential|apartments|detached|terrace|hotel|dormitory|houseboat|school|civic|college|university|public|hospital|kindergarten|train_station|retail|commercial"]["addr:housenumber"!~".*"]["addr:housename"!~".*"](${bbox});
@@ -109,10 +109,17 @@ class HouseNumberQuest extends Quest
 		return ret;
 	}
 
+	get icon()
+	{
+		return "housenumber.svg";
+	}
+
 	render(map)
 	{
 		let coords = this.points.map((p) => [p.lat, p.lon]);
-		L.polygon(coords).addTo(map);
+		let polygon = L.polygon(coords);
+		polygon.addTo(map);
+		return polygon.getCenter();
 	}
 
 	showDetails(element)
