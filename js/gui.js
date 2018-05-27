@@ -2,24 +2,30 @@ var questWindowShown = false;
 
 function handleResize()
 {
-	document.getElementById('div_fullscreen').style.height = window.innerHeight +'px';
-	if(window.innerHeight > window.innerWidth * 0.65){
+	document.getElementById('div_fullscreen').style.height = window.innerHeight + 'px';
+	if(window.innerHeight > window.innerWidth * 0.65)
+	{
 		//portrait
 		div_map.style.width = "100%";
-		if(questWindowShown){
+		if(questWindowShown)
+		{
 			div_map.style.height = "65%";
 		}
-		else{
+		else
+		{
 			div_map.style.height = "100%";
 		}
 	}
-	else{
+	else
+	{
 		//landscape	
 		div_map.style.height = "100%";
-		if(questWindowShown){
+		if(questWindowShown)
+		{
 			div_map.style.width = "65%";
 		}
-		else{
+		else
+		{
 			div_map.style.width = "100%";
 		}		
 	}
@@ -35,8 +41,10 @@ function onClick(e)
 }
 ll_map.on("click", onClick);
 
-function hideAddressBar(){
-	if(document.documentElement.scrollHeight<window.outerHeight/window.devicePixelRatio){
+function hideAddressBar()
+{
+	if(document.documentElement.scrollHeight < window.outerHeight / window.devicePixelRatio)
+	{
 		document.documentElement.style.height = (window.outerHeight / window.devicePixelRatio) + 'px';
 	}
 	setTimeout(window.scrollTo(1, 1), 0);
@@ -44,7 +52,6 @@ function hideAddressBar(){
 window.addEventListener("load", hideAddressBar);
 window.addEventListener("orientationchange", hideAddressBar);
 
-//Leaflet test
 L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 	maxZoom: 18,
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
