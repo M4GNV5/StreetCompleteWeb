@@ -55,9 +55,8 @@ class Quest
 		throw new Error("Not implemented");
 	}
 
-	//render the quest to the map
-	//	`map` is the leaflet map object
-	//	returns the place where the marker for the quest should be (usually the center)
+	//render the quest
+	//	returns the rendered element
 	render(map)
 	{
 		throw new Error("Not implemented");
@@ -114,12 +113,10 @@ class HouseNumberQuest extends Quest
 		return HouseNumberQuest.icon;
 	}
 
-	render(map)
+	render()
 	{
 		let coords = this.points.map((p) => [p.lat, p.lon]);
-		let polygon = L.polygon(coords);
-		polygon.addTo(map);
-		return polygon.getCenter();
+		return L.polygon(coords);
 	}
 
 	showDetails(element)

@@ -36,7 +36,7 @@ handleResize();
 //quest gui test
 function onClick(e)
 {
-	questWindowShown = !questWindowShown;	
+	questWindowShown = false;	
 	handleResize();
 }
 ll_map.on("click", onClick);
@@ -53,7 +53,7 @@ window.addEventListener("load", hideAddressBar);
 window.addEventListener("orientationchange", hideAddressBar);
 
 let tile = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
-	maxZoom: 18,
+	maxZoom: 20,
 	attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 		'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 		'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -61,19 +61,38 @@ let tile = L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?acc
 })
 tile.addTo(ll_map);
 
+function showQuestDetails(quest)
+{
+	quest.showDetails(document.getElementById("div_details"));
+
+	questWindowShown = true;
+	handleResize();
+}
+
 function refreshQuests()
 {
 	let bbox = ll_map.getBounds();
 	bbox = `${bbox.getSouth()},${bbox.getWest()},${bbox.getNorth()},${bbox.getEast()}`;
 	findQuests(bbox).then(function(quests)
 	{
-		ll_map.eachLayer(function(l)
+		ll_map.eachLayer(function(layer)
 		{
-			if(l != tile)
-				ll_map.removeLayer(l);
+			if(layer != tile)
+				ll_map.removeLayer(layer);
 		});
 
-		quests.map((q) => L.marker(q.render(ll_map), {icon: q.icon}).addTo(ll_map));
+		for(let quest of quests)
+		{
+			let layer = quest.render();
+			layer.addTo(ll_map);
+
+			let marker = L.marker(layer.getCenter(), {icon: quest.icon});
+			marker.addTo(ll_map);
+
+			let showQuest = showQuestDetails.bind(null, quest);
+			layer.on("click", showQuest);
+			marker.on("click", showQuest);
+		}
 	});
 }
 ll_map.on("moveend", refreshQuests);
