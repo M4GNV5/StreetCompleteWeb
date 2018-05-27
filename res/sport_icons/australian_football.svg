@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 25.399999 25.400001"
+   height="96"
+   width="96">
+  <defs
+     id="defs2">
+    <clipPath
+       id="clipPath44"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path46-65"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath16-2"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path18-53"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath28-4"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path30-9"
+         d="M 1.193,5 C 1.193,3 3,1 5,1 v 0 h 28 c 2,0 3.731,2 3.731,4 v 0 c 0,4.355 -4.634,11 -17.731,11 v 0 C 5.508,16 1.193,9.541 1.193,5" />
+    </clipPath>
+    <clipPath
+       id="clipPath16-1"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path18-5"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath16-90"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path18-2"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       clipPathUnits="userSpaceOnUse"
+       id="clipPath16-4">
+      <path
+         d="M 0,36 H 36 V 0 H 0 Z"
+         id="path18-8" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-271.59999)"
+     id="layer1">
+    <g
+       style="stroke-width:0.54481703"
+       transform="matrix(0.64217399,0,0,-0.64217399,0.49393213,296.38169)"
+       id="australian_football">
+      <path
+         d="m 29.2461,8.7539 c -6.831,-6.831 -17.931,-9.393 -25.615,-5.123 -4.27,7.685 -1.708,18.785 5.123,25.615 6.83,6.831 17.93,9.393 25.615,5.123 4.27,-7.684 1.708,-18.784 -5.123,-25.615"
+         style="fill:#d43030;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.54481703"
+         id="path22-6-5" />
+      <g
+         style="stroke-width:0.54481703"
+         id="g24-4-7">
+        <g
+           id="g52-08"
+           transform="translate(16.439,-2.3467)"
+           style="stroke-width:0.54481703" />
+      </g>
+      <path
+         d="M 29.923579,12.502304 C 24.148787,6.7275132 14.765071,4.5616513 8.2691713,8.1714224 4.6594002,14.668168 6.8252634,24.051884 12.600053,29.825829 c 5.773945,5.774791 15.157664,7.940653 21.654408,4.330882 3.609773,-6.495901 1.443906,-15.879616 -4.330882,-21.654407"
+         style="fill:#d93a3a;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.54481697"
+         id="path22-6-6-3-5" />
+      <path
+         d="M 30.604843,17.820162 C 26.35594,13.571261 19.451706,11.977689 14.672234,14.63364 c -2.655952,4.780095 -1.06238,11.684327 3.186522,15.932608 4.248281,4.248903 11.152517,5.842473 15.93261,3.186522 2.655953,-4.779472 1.06238,-11.683705 -3.186523,-15.932608"
+         style="fill:#dc5151;fill-opacity:1;fill-rule:nonzero;stroke:none;stroke-width:0.54481697"
+         id="path22-6-6-5" />
+      <path
+         id="path6867-6"
+         d="M 4.2192867,4.2588551 33.810442,33.783016"
+         style="fill:none;fill-rule:evenodd;stroke:#b63131;stroke-width:1.64804769;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path6869-8"
+         d="m 12.223995,12.337409 12.665111,12.53951"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dfc2af;stroke-width:1.64804769;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path6871-4"
+         d="m 11.972446,15.492419 3.382666,-3.538736"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dfc2af;stroke-width:1.64804769;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path6871-3-4"
+         d="m 14.976469,18.667252 3.382666,-3.538736"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dfc2af;stroke-width:1.64804769;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path6871-2-8"
+         d="m 18.213705,21.904488 3.382666,-3.538736"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dfc2af;stroke-width:1.64804769;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+      <path
+         id="path6871-0-9"
+         d="m 21.487728,24.994578 3.382666,-3.538736"
+         style="fill:none;fill-opacity:1;fill-rule:evenodd;stroke:#dfc2af;stroke-width:1.64804769;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1" />
+    </g>
+  </g>
+</svg>

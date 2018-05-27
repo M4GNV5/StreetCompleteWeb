@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   id="svg8"
+   version="1.1"
+   viewBox="0 0 25.399999 25.400001"
+   height="96"
+   width="96">
+  <defs
+     id="defs2">
+    <clipPath
+       id="clipPath44"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path46-65"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath16-2"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path18-53"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+    <clipPath
+       id="clipPath28-4"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path30-9"
+         d="M 1.193,5 C 1.193,3 3,1 5,1 v 0 h 28 c 2,0 3.731,2 3.731,4 v 0 c 0,4.355 -4.634,11 -17.731,11 v 0 C 5.508,16 1.193,9.541 1.193,5" />
+    </clipPath>
+    <clipPath
+       id="clipPath16-1"
+       clipPathUnits="userSpaceOnUse">
+      <path
+         id="path18-5"
+         d="M 0,38 H 38 V 0 H 0 Z" />
+    </clipPath>
+  </defs>
+  <metadata
+     id="metadata5">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     transform="translate(0,-271.59999)"
+     id="layer1">
+    <g
+       style="stroke-width:0.51915628"
+       transform="matrix(0.38094986,0,0,0.38094986,0.24900441,271.80585)"
+       id="table_tennis">
+      <path
+         style="fill:#ed4c5c;stroke-width:0.51915628"
+         d="M 55.3,8.7 C 49.1,2.5 34.8,-3.2 21.2,10.3 c -9,8.9 -12.2,20.2 0,32.4 12.2,12.1 23.5,8.9 32.5,0 13.6,-13.6 7.8,-27.8 1.6,-34"
+         id="path5226" />
+      <path
+         style="fill:#fed0ac;stroke-width:0.51915628"
+         d="M 30.8,49.3 14.6,33.1 c 0,0 3.4,7.9 -2.4,13.8 0,0 -4.9,4.9 -10.1,9.4 0.6,1.2 0.4,1.3 2.5,3.5 1.8,1.8 1.9,1.6 2.9,2.2 C 12,56.7 17,51.7 17,51.7 22.9,45.9 30.8,49.3 30.8,49.3"
+         id="path5228" />
+      <g
+         style="fill:#d3976e;stroke-width:0.51915628"
+         id="g5234">
+        <path
+           style="opacity:0.5;stroke-width:0.51915628"
+           d="m 7.6,61.8 c 3.3,-3.8 6.9,-7.5 8.5,-9.1 l 8.7,-9.4 -4.2,-4.2 -9.4,8.7 C 9.5,49.4 5.8,53 2,56.3 c 0.6,1.2 0.4,1.3 2.5,3.5 1.8,1.8 1.9,1.6 2.9,2.2 0.1,-0.1 0.1,-0.1 0.2,-0.2"
+           id="path5230" />
+        <path
+           style="stroke-width:0.51915628"
+           d="m 5.9,61.1 c 0.6,0.5 0.9,0.6 1.5,0.9 0.1,-0.1 0.1,-0.1 0.2,-0.1 3.3,-3.8 6.9,-7.5 8.5,-9.1 l 8.7,-9.4 -2.4,1.4 -16.5,16.3"
+           id="path5232" />
+      </g>
+      <g
+         style="fill:#3e4347;stroke-width:0.51915628"
+         id="g5240">
+        <path
+           style="stroke-width:0.51915628"
+           d="m 30.8,49.3 -6,-6 -8.1,8.7 c 1.6,-1.6 6.5,-5.3 14.1,-2.7"
+           id="path5236" />
+        <path
+           style="stroke-width:0.51915628"
+           d="m 14.6,33.1 6,6 -8.7,8.1 c 1.6,-1.7 5.3,-6.5 2.7,-14.1"
+           id="path5238" />
+      </g>
+      <g
+         style="fill:#ff8736;stroke-width:0.51915628"
+         id="g5246">
+        <circle
+           style="stroke-width:0.51915628"
+           cx="54.099998"
+           cy="54.099998"
+           r="7.9000001"
+           id="circle5242" />
+        <path
+           style="stroke-width:0.51915628"
+           d="m 59.6,51.1 c -0.4,0.8 -2,0.8 -3.5,0 -1.5,-0.8 -2.5,-2.1 -2.1,-2.8 0.4,-0.8 2,-0.8 3.5,0 1.6,0.8 2.5,2 2.1,2.8"
+           id="path5244" />
+      </g>
+      <g
+         style="fill:#ff9f5f;fill-opacity:1;stroke-width:0.75626206"
+         id="g5246-9"
+         transform="matrix(0.68647667,0,0,0.68647667,16.187092,15.78645)">
+        <circle
+           style="fill:#ff9f5f;fill-opacity:1;stroke-width:0.75626206"
+           cx="54.099998"
+           cy="54.099998"
+           r="7.9000001"
+           id="circle5242-7" />
+        <path
+           style="fill:#ff9f5f;fill-opacity:1;stroke-width:0.75626206"
+           d="m 59.6,51.1 c -0.4,0.8 -2,0.8 -3.5,0 -1.5,-0.8 -2.5,-2.1 -2.1,-2.8 0.4,-0.8 2,-0.8 3.5,0 1.6,0.8 2.5,2 2.1,2.8"
+           id="path5244-4" />
+      </g>
+    </g>
+  </g>
+</svg>
