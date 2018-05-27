@@ -73,13 +73,12 @@ function removeQuestMarkers()
 {
 	ll_map.eachLayer(function(layer)
 	{
-		if(layer.is_quest && layer.is_quest_marker == true)
+		if(layer.is_quest_marker)
 		{
 			ll_map.removeLayer(layer);
 		}
 	});
 }
-var cnt = 0;
 function refreshQuests()
 {
 	if(ll_map.getZoom() > 12){
@@ -91,6 +90,7 @@ function refreshQuests()
 			for(let quest of quests)
 			{
 				let layer = quest.render();
+				layer.is_quest_marker = true;
 				layer.addTo(ll_map);
 
 				let marker = L.marker(layer.getCenter(), {icon: quest.icon});
