@@ -77,8 +77,10 @@ function refreshQuests()
 	{
 		ll_map.eachLayer(function(layer)
 		{
-			if(layer != tile)
+            if(layer.is_quest && layer.is_quest_marker == true)
+            {
 				ll_map.removeLayer(layer);
+            }
 		});
 
 		for(let quest of quests)
@@ -87,6 +89,7 @@ function refreshQuests()
 			layer.addTo(ll_map);
 
 			let marker = L.marker(layer.getCenter(), {icon: quest.icon});
+            marker.is_quest_marker = true;
 			marker.addTo(ll_map);
 
 			let showQuest = showQuestDetails.bind(null, quest);
@@ -102,20 +105,22 @@ var pos_marker;
 var pos_radius;
 function update_location(position)
 {
-    if(pos_marker){
-        pos_marker.remove();
-        pos_radius.remove();
-    }
    // var radius = pos.accuracy / 2;
    var latlng = [position.coords.latitude,  position.coords.longitude];
-   pos_marker = L.marker(latlng).addTo(ll_map);
-    pos_radius = L.circle(latlng, {
+   var pos_marker_new = L.marker(latlng).addTo(ll_map);
+   var  pos_radius_new = L.circle(latlng, {
         color: 'blue',
         fillColor: '#4c70ff',
         fillOpacity: 0.5,
         radius: position.coords.accuracy
     }).addTo(ll_map);
     ll_map.setView(latlng, ll_map.getZoom());   
+    if(pos_marker){
+        pos_marker.remove();
+        pos_radius.remove();
+    }
+    pos_marker = pos_marker_new;
+    pos_radius = pos_radius_new;
 }
 watchId = navigator.geolocation.watchPosition(
      update_location,
